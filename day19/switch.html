@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label>Enter Day of week</label>
+    <input type="text" id="text">
+    <button type="button" onclick="find()">Find a Day</button><br>
+    <label>Day</label>
+    <input type="text" id="s1" readonly>
+    <script>
+        function find() {
+            let day;
+            let d = parseInt(document.getElementById("text").value);
+            switch (d) {
+                case 1:
+                    day = "sunday";
+                    break;
+                case 2:
+                    day = "monday";
+                    break;
+                case 3:
+                    day = "Tuesday";
+                case 4:
+                    day = "Thursday";
+                    break;
+                case 5:
+                    day = "Friday";
+                    break;
+                case 6:
+                    day = "Saturday";
+                    break;
+                default:
+                    day = "Invalid choice";
+            }
+            document.getElementById("s1").value=day;
+        }
+    </script>
+</body>
+
+</html>

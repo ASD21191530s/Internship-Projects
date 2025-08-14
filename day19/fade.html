@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#fadein").click(function () {
+                $("#red").fadeIn();
+                $("#green").fadeIn(2000);
+
+                $("#blue").fadeIn(3000);
+
+            })
+            $("#fadeout").click(function () {
+                $("#red").fadeOut();
+                $("#green").fadeOut(2000);
+                $("#blue").fadeOut(3000);
+
+            })
+        })
+    </script>
+</head>
+
+<body>
+
+    <button type="button" id="fadein">FadeIn</button>
+
+    <button type="button" id="fadeout">FadenOut</button>
+    <div id="red" style="height: 80px; width: 80px;  display: none;background-color: red;"></div>
+    <div id="green" style="height: 80px; width: 80px;  display: none;background-color: green;"></div>
+    <div id="blue" style="height: 80px; width: 80px;  display: none;background-color:blue;"></div>
+</body>
+
+</html>

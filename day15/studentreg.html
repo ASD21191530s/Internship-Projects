@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <form method="get">
+            <h1>Student Registration Form</h1>
+            <div class="form-group">
+                <label>Name</label>
+                <input type="name" name="name" class="form-control" placeholder="Enter name">
+
+            </div>
+            <div class="form-group">
+                <label>Number</label>
+                <input type="text" name="phoneno" class="form-control" placeholder="enter Number">
+            </div>
+            <div class="form-group form-check">
+                <label>Address</label>
+                <textarea class="form-control" placeholder="Enter address" name="address"></textarea>
+            </div>
+            <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" class="form-control" placeholder="Enter emailid" name="email">
+            </div>
+            <div class="form-group">
+                Select class
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">FY</option>
+                    <option value="2">SY</option>
+                    <option value="3">TY</option>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
+                    checked>
+                <label class="form-check-label" for="exampleRadios1">
+                    Male </label>
+            </div>
+             <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
+                    checked>
+                <label class="form-check-label" for="exampleRadios1">
+                    female </label>
+            </div>
+
+             <div class="form-check">
+                <label>DOB</label>
+                <input class="form-check-input" type="date" name="dob"  
+                    placeholder="dob" >
+            </div>   
+                  <div class="form-check">
+                <label>Adhaare</label>
+                <input type="file" class="form-check-input" name="Adhaare" 
+                    placeholder="Adhaare">
+            </div>       
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

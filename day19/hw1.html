@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label>Enter a no</label>
+    <input type="text" id="num">
+    <button type="button" id="btn" onclick="prime()">check</button>
+    <script>
+        function prime() {
+            no=document.getElementById("num").value
+            if (no <= 1) {
+                document.write(no + " is not prime");
+                return;
+            }
+
+            let count = 0;
+
+            for (let i = 1; i <= no; i++) {
+                if (no % i === 0) {
+                    count++;
+                }
+            }
+
+            if (count === 2) {
+                document.write(no + " is prime");
+            } else {
+                document.write(no + " is not prime");
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

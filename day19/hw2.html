@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("#e").show();
+            })
+            $("#btn2").click(function () {
+                $("#e").hide();
+            })
+
+            $("#btn3").click(function () {
+                $("#a").fadeIn();
+                $("#b").fadeIn(2000);
+                $("#c").fadeIn(3000);
+            })
+            $("#btn4").click(function () {
+                $("#a").fadeOut();
+                $("#b").fadeOut(2000);
+                $("#c").fadeOut(3000);
+            })
+            $("#slide").click(function () {
+                $("#s2").slideToggle();
+            })
+            $("#btn5").click(function () {
+                $("#d").show();
+                $("#d").animate({ left: '1000px' })
+            })
+            $("#btn6").click(function () {
+                $("#d").animate({ left: '0px' })
+            })
+        })
+    </script>
+    <style>
+        img {
+            align-content: center;
+        }
+
+        button {
+            align-content: center;
+        }
+
+        #slide,
+        #s2 {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            font-size: 200%;
+            background-color: grey;
+            border: 2px solid black;
+        }
+
+        #s2 {
+            display: none;
+        }
+
+        #d {
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Using hide and show function in js</h1>
+    <button id="btn1" type="button">Show</button>
+    <button id="btn2" type="button">Hide</button>
+    <br><br>
+    <img src="c.avif" id="e"style="display: none;">
+    <hr>
+
+    <h1>Fadein & Fadeout</h1>
+    <button id="btn3" type="button">FadeIn</button>
+    <button id="btn4" type="button">Fadeout</button><br><br>
+    <img src="i.webp" height="200px" id="a" width="200px" style="display: none;">
+    <img src="t.jpg" height="200px" id="b" width="200px"style="display: none;">
+    <img src="c.jpg" height="200px" id="c" width="200px"style="display: none;">
+    <hr>
+    <h1>Slide up and Slide down</h1>
+    <div id="slide">click to slide</div>
+    <div id="s2">Hello everyone I am Atharva.<br><img src="img2..jpg" height="400px" width="1050px"></div>
+    <hr>
+    <h1>Animation</h1>
+      <button type="button" id="btn5">Start</button>
+    <button type="button" id="btn6">Reset</button>
+    <img src="tom.png" id="d" style="display: none;">
+  
+    <hr>
+</body>
+
+</html>

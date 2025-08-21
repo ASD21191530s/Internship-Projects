@@ -1,0 +1,1 @@
+Added a Print pdf button in actions which helps to get a pdf for that particular column 
